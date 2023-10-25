@@ -54,17 +54,20 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 6px;
   color: var(--accent-color);
-  position: relative;
-  margin-left: 110px;
+}
+
+.h3-wrapper {
+  width: 425px;
+  margin-left: 100px;
 
   &::before {
     content: "";
     display: block;
     width: 82px;
     /* height: 2px; */
-    position: absolute;
-    top: 40%;
+    position: relative;
     left: -100px;
+    top: 13px;
     border-bottom: 4px solid var(--accent-color);
   }
 }
@@ -218,7 +221,7 @@ p {
 .###..######...#######...######..####.##.....##.########.........##........##.....##.##....##.########.########
 */
 .social-panel {
-  margin-top: 400px;
+  margin-top: 30vh;
   display: flex;
   flex-flow: column;
   width: 20px;
@@ -339,28 +342,30 @@ p {
   justify-content: center;
 }
 
-/* .slider img {
-  width: 100%;
-} */
-
 .sider-bg {
-  background: url("../img/bg/slider-bg.png");
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 10%,
+      rgba(0, 0, 0, .6)
+    ),
+    url("../img/bg/slider-bg.png");
   height: 950px;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
 }
 
 .slider-btn {
-  padding: 0 50px;
-  width: 100%;
-  position: absolute;
-  top: 47%;
+  padding: 0 40px;
   display: flex;
+  justify-content: space-between;
 }
 
 .circle-btn {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -372,31 +377,44 @@ p {
 
 .circle-btn:last-of-type {
   transform: rotate(180deg);
-  margin-left: auto;
-}
-
-.circle-btn svg:hover {
-  fill: var(--accent-color);
 }
 
 .slider .ads-detail {
   max-width: 900px;
   margin: 0 auto;
   text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 
+.slider .h3-wrapper {
+  width: 100px;
+  text-align: text;
+  margin-left: 0;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 82px;
+    height: 2px;
+    position: relative;
+    left: 115px;
+    top: -18px;
+    border-bottom: 4px solid var(--accent-color);
+  }
+}
 .slider h2 {
   margin: 0 auto;
-
-
-
-.slider h3::after {
-  content: "";
-  display: block;
-  width: 82px;
-  /* height: 2px; */
-  position: absolute;
-  top: 40%;
-  left: 110px;
-  border-bottom: 4px solid var(--accent-color);
+  max-width: 705px;
+  font-size: 2.5rem;
 }
+
+.slider p {
+  font-size: .9rem;
+}
+
+.slider .read-more {
+
+  margin: 27px 0 100px 0;
+} 
