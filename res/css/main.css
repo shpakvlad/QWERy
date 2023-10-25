@@ -334,17 +334,25 @@ p {
 
 .slider .container {
   position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
 }
 
-.slider img {
+/* .slider img {
   width: 100%;
+} */
+
+.sider-bg {
+  background: url("../img/bg/slider-bg.png");
+  height: 950px;
 }
 
 .slider-btn {
   padding: 0 50px;
   width: 100%;
   position: absolute;
-  top: 50%;
+  top: 47%;
   display: flex;
 }
 
@@ -373,15 +381,14 @@ p {
 
 .slider .ads-detail {
   max-width: 900px;
-  bottom: 0;
-  position: absolute;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.slider h2 {
   margin: 0 auto;
 
-  display: flex;
-  align-items: center;
-  flex-flow: column;
-  /* text-align: center; */
-}
+
 
 .slider h3::after {
   content: "";
