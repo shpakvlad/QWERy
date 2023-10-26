@@ -468,6 +468,7 @@ p {
 
 .ready-panel p {
   margin-top: 0;
+  margin-left: 40px;
   font: 3rem/65.37px "Open-sans-bold";
   letter-spacing: 1%;
 }
@@ -496,6 +497,19 @@ p {
   letter-spacing: -0.3px;
   margin-bottom: 50px;
 }
+ .subscr-panel {
+  margin-left: 40px;
+
+ }
+.subscr-panel
+.subscr-input input[type="email"] {
+  width: 430px;
+  height: 70px;
+  font: 2rem/2rem "Open-sans-regular";
+  background-color: var(--bg-color);
+  border: none;
+  border-bottom: 2px solid var(--font-color);
+}
 
 .subscr-input button[type="button"] {
   width: 70px;
@@ -504,15 +518,6 @@ p {
   font-size: 2.25rem;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-}
-
-.subscr-input input[type="email"] {
-  width: 430px;
-  height: 70px;
-  font: 2rem/2rem "Open-sans-regular";
-  background-color: var(--bg-color);
-  border: none;
-  border-bottom: 2px solid var(--font-color);
 }
 
 .subscr-input input[type="email"]::placeholder {
