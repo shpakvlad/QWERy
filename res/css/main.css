@@ -126,13 +126,23 @@ p {
 }
 
 .read-more {
+  display: flex;
+  align-items: center;
+  text-align: center;
   font: 1.125rem/24.51px "Open-sans-bold";
   color: var(--accent-color);
   text-decoration: none;
+  transition: color .3s ease-in;
+
+  &:hover {
+    color: var(--font-color);
+  }
 }
+
 .read-more img {
   width: 24px;
   height: 24px;
+  margin-left: 10px;
 }
 
 /*
