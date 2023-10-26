@@ -4,6 +4,20 @@
   box-sizing: border-box;
 }
 
+body::-webkit-scrollbar {
+  width: 12px;               /* ширина всей полосы прокрутки */
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--bg-color);        /* цвет зоны отслеживания */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent;    /* цвет бегунка */
+ /*  border-radius: 20px;       округлось бегунка */
+  border: 2px solid var(--accent-color);  /* отступ вокруг бегунка */
+}
+
 html {
   font: 1.125rem/32px "Open-sans-semi-bold";
   background-color: var(--bg-color);
@@ -444,6 +458,7 @@ p {
 */
 .ready-panel {
   padding-bottom: 48px;
+  margin-bottom: 55px;
   display: flex;
   align-items: center;
   justify-content: space-between;
