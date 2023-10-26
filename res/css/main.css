@@ -306,14 +306,14 @@ p {
 .##.....##.##.....##.##....##.........##....##.##.....##.##....##..##.....##
 .##.....##.########...######...........######..##.....##.##.....##.########.
 */
-.ads-card-1 .container {
+.ads-card .container {
   margin-top: -150px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.ads-card-1 img {
+.ads-card img {
   margin-right: 50px;
 }
 
@@ -325,6 +325,19 @@ p {
   margin-bottom: 27px;
 }
 
+/* reverse */
+.ads-card .reverse {
+  margin-top: 0;
+  flex-flow: row-reverse;
+}
+
+.reverse .ads-datails {
+  padding-left: 50px;
+}
+
+/* .ads-card :last-of-type {
+  margin-top: 150px;
+} */
 /*
 ..######..##.......####.########..########.########.
 .##....##.##........##..##.....##.##.......##.....##
