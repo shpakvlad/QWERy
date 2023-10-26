@@ -2,20 +2,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: var(--font-color);
 }
 
 body::-webkit-scrollbar {
-  width: 12px;               /* ширина всей полосы прокрутки */
+  width: 12px; /* ширина всей полосы прокрутки */
 }
 
 body::-webkit-scrollbar-track {
-  background: var(--bg-color);        /* цвет зоны отслеживания */
+  background: var(--bg-color); /* цвет зоны отслеживания */
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: transparent;    /* цвет бегунка */
- /*  border-radius: 20px;       округлось бегунка */
-  border: 2px solid var(--accent-color);  /* отступ вокруг бегунка */
+  background-color: transparent; /* цвет бегунка */
+  /*  border-radius: 20px;       округлось бегунка */
+  border: 2px solid var(--accent-color); /* отступ вокруг бегунка */
 }
 
 html {
@@ -375,7 +376,7 @@ p {
   background: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0) 10%,
-      rgba(0, 0, 0, .6)
+      rgba(0, 0, 0, 0.6)
     ),
     url("../img/bg/slider-bg.png");
   height: 950px;
@@ -440,12 +441,12 @@ p {
 }
 
 .slider p {
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .slider .read-more {
   margin: 27px 0 100px 0;
-} 
+}
 
 /*
 .########..#######...#######..########.########.########.
@@ -479,5 +480,111 @@ p {
 
 .ready-panel-btn p {
   margin-top: 0;
+  margin-left: 50px;
   font: 1.375rem/28.64px "DM-sans-regular";
+}
+
+/* subcribe menu */
+/* suncribe */
+.subscr-menu-panel {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscr-panel h4 {
+  font: 2.25rem/49px "Open-sans-bold";
+  letter-spacing: -0.3px;
+  margin-bottom: 50px;
+}
+
+.subscr-input button[type="button"] {
+  width: 70px;
+  height: 70px;
+  padding: 0;
+  font-size: 2.25rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.subscr-input input[type="email"] {
+  width: 430px;
+  height: 70px;
+  font: 2rem/2rem "Open-sans-regular";
+  background-color: var(--bg-color);
+  border: none;
+  border-bottom: 2px solid var(--font-color);
+}
+
+.subscr-input input[type="email"]::placeholder {
+  padding-left: 20px;
+  font-size: 0.8rem;
+  color: var(--accent-color);
+}
+
+/* menu-panel */
+.menu-panel {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-1 nav,
+.menu-2 nav,
+.menu-3 nav {
+  display: flex;
+  flex-flow: column;
+  gap: 45px;
+}
+
+.subscr-menu-panel p {
+  margin-bottom: 45px;
+  font: 1.25rem "Open-sans-bold";
+  letter-spacing: 0.23px;
+  color: var(--accent-color);
+}
+
+.subscr-menu-panel a {
+  font: 1.1875rem "Open-sans-regular";
+  letter-spacing: -0.2px;
+  transition: color .3s ease-in;
+
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
+/* rights-social */
+.rights-social {
+  margin-top: 100px;
+  display: flex;
+  padding: 0 40px;
+  justify-content: space-between;
+}
+
+.rights-panel {
+  display: flex;
+  gap: 50px;
+}
+
+.rights-panel a {
+  font: 0.9375/19.53px "DM-sans-regular";  
+  transition: color .3s ease-in;
+
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
+.footer-social-panel {
+  display: flex;
+  gap: 40px;
+}
+
+footer section {
+  padding-bottom: 100px;
+}
+
+.copy-right p {
+  font: 1.125rem/32px "Open-sans-semi-bold";
+  text-align: center;
+  margin-bottom: 118px;
 }
