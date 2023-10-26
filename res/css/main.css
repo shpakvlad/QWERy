@@ -328,6 +328,7 @@ p {
 /* reverse */
 .ads-card .reverse {
   margin-top: 0;
+  margin-bottom: 300px;
   flex-flow: row-reverse;
 }
 
@@ -335,7 +336,7 @@ p {
   padding-left: 50px;
 }
 
-/* .ads-card :last-of-type {
+/* .ads-card :last-child {
   margin-top: 150px;
 } */
 /*
